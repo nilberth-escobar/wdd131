@@ -46,6 +46,13 @@ header {
   font-weight: 700;
 }
 
+#student-name {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+  color: var(--text-light);
+  font-size: larger;
+}
+
 /* Navigation Bar Styles */
 nav {
   display: flex;
