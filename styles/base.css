@@ -1,5 +1,4 @@
-/* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* CSS Variables for the new modern color scheme */
 :root {
@@ -12,7 +11,7 @@
   --accent-mint: #85fee3;
   --resources-list: #1f2232;
 
-  /* Mapped to Roles */
+ 
   --gradient-primary: linear-gradient(
     135deg,
     var(--primary-purple),

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nilberth Escobar" />
     <meta
@@ -9,72 +9,84 @@
       content="WDD131 - Dynamic Web Fundamentals - Nilberth Escobar"
     />
     <link rel="stylesheet" href="styles/base.css" />
-    <title>WDD131 - Dynamic Web Fundamentals - Nilberth Escobar</title>
-    <script src="scripts/getDates.js" defer></script>
+    <title>WDD 131 - Dynamic Web Fundamentals - Nilberth Escobar</title>
   </head>
   <body>
     <header>
-      <span class="course-title">WDD131 - Dynamic Web Fundamentals</span>
+      <span id="course-title">WDD131 - Dynamic Web Fundamentals</span>
 
       <nav>
-        <a href="www.linkedin.com/in/nilberth-escobar-8a87b523a
+        <a
+          href="www.linkedin.com/in/nilberth-escobar-8a87b523a
 
-">LinkedIn</a>
+"
+          >LinkedIn</a
+        >
         <a href="https://byupw.instructure.com/.">Canvas</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6?lang=eng&id=p30#p30"
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6?lang=eng&id=p30#p30"
           >Scripture</a
         >
         <a href="">Final Project</a>
       </nav>
-    </header>        
+    </header>
 
     <main>
-        <!-- Left Column: About Me -->
-        <section class="card">
-            <h2>About Me</h2>            
-            <div class="card-content">
-                <div class="about-me-grid">
-                    <div>
-                        <p>
-                            Hello, my name is Nilberth Escobar. I was born and raised in
-                            Guatemala, Central America. I wasn't sure what to study. I've been
-                            interested in technology since my father bought our first
-                            computer. Started playing videogames and I've been hooked ever
-                            since.
-                        </p>
-                    </div>
-                    <img class="profile-pic" src="images/nilberth_profile.webp" alt="Nilberth Escobar Profile Picture" />
-                </div>
-
-                <div class="hometown-section">
-                    <h3>San Marcos, Guatemala</h3>
-                    <img class="flag-pic" src="images/flag_of_guatemala.webp" alt="Guatemalan Flag" />
-                    <p>
-                        San Marcos is one of the cities with a crazy weather, or I should
-                        say weathers, haha. During summer it's hot in the mornings and
-                        cold in the evenings, and during the winter it rains a lot. The
-                        city is located like 2 or 3 hours from the Mexican border. You can
-                        cross the border by car or by bus and also by boat.
-                    </p>
-                </div>
+      <!-- Left Column: About Me -->
+      <section class="card">
+        <h2>About Me</h2>
+        <div class="card-content">
+          <div class="about-me-grid">
+            <div>
+              <p>
+                Hello, my name is Nilberth Escobar. I was born and raised in
+                Guatemala, Central America. I wasn't sure what to study. I've
+                been interested in technology since my father bought our first
+                computer. Started playing videogames and I've been hooked ever
+                since.
+              </p>
             </div>
-        </section>
+            <img
+              class="profile-pic"
+              src="images/nilberth_profile.webp"
+              alt="Nilberth Escobar Profile Picture"
+            />
+          </div>
 
-        <!-- Right Column: Web Dev Resources -->
-        <section class="card">
-           
-            <div class="card-content">
-                <ul class="resources-list">
-                    <li><a href="https://dev.to/">Dev.to Community</a></li>
-                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                    <li><a href="http://www.udemy.com/">Udemy</a></li>
-                    <li><a href="https://picsum.photos/">Lorem Picsum Image</a></li>
-                </ul>
-            </div>
-        </section>
+          <div class="hometown-section">
+            <h3>San Marcos, Guatemala</h3>
+            <img
+              class="flag-pic"
+              src="images/flag_of_guatemala.webp"
+              alt="Guatemalan Flag"
+            />
+            <p>
+              San Marcos is one of the cities with a crazy weather, or I should
+              say weathers, haha. During summer it's hot in the mornings and
+              cold in the evenings, and during the winter it rains a lot. The
+              city is located like 2 or 3 hours from the Mexican border. You can
+              cross the border by car or by bus and also by boat.
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <!-- Right Column: Web Dev Resources -->
+      <section class="card">
+        <h2>Web Development Resources</h2>
+        <div class="card-content">
+          <ul class="resources-list">
+            <li><a href="https://dev.to/">Dev.to Community</a></li>
+            <li>
+              <a href="https://www.smashingmagazine.com/">Smashing Magazine</a>
+            </li>
+            <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+            <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+            <li><a href="http://www.udemy.com/">Udemy</a></li>
+            <li><a href="https://picsum.photos/">Lorem Picsum Image</a></li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -83,5 +95,6 @@
       </p>
       <p id="lastModified">Lorem ipsum dolor, sit amet consectetur</p>
     </footer>
+    <script src="scripts/getDates.js" defer></script>
   </body>
 </html>
