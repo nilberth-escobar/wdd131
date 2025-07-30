@@ -1,0 +1,67 @@
+@media (min-width: 550px) {
+
+    /* h1 {
+        color: yellow;
+    } */
+
+    main {
+        position: relative;
+        padding: 0rem;
+        background-color: var(--accent_color2);
+    }
+        
+    /* Common responsive .data & .weather class settings */
+    /* Requires parent (main) to have position: relative; */
+    .data, .weather {
+        position: absolute;
+        background-color: white;
+        opacity: 0.8; /* 0.8 opacity setting */
+        color: black;
+        border-radius: 20px;
+        padding: 4rem 5px 10px 5px;
+        margin: 0;
+    }
+    
+    /* Responsive .data class */
+    .data {
+        top: 10%;
+        left: 5%;
+        width: 40%;
+    }
+
+    /* Responsive .weather class */
+    .weather {
+        bottom: 10%;
+        right: 5%;
+        width: 30%;
+    }
+
+    /* Seems easier to move H2 headers up from the bottom instead of down from the top */
+    .data h2{
+        background-color: lightblue;
+        color: black;
+        position: absolute;
+        right: 55%;
+        bottom: 80%;
+        width: 50%;
+        text-align: left;
+        padding: 0 0 0 1rem;
+    }
+    
+    .weather h2{
+        background-color:lightblue;
+        color: black;
+        position: absolute;
+        right: 55%;
+        bottom: 75%;
+        width: 50%;
+        text-align: left;
+        padding: 0 0 0 1rem;
+    }
+    
+    /* Added ::after pseudo element */
+    .weather h2::after {
+        display: none;
+    }
+}
+  
