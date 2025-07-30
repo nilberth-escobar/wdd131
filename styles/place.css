@@ -28,7 +28,7 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-/* padding: 0px keeps nav-bar at bottom of header */
+
 header {
     background-color: var(--back_color2);
     padding: 2rem;
@@ -36,22 +36,17 @@ header {
     border: 10px solid var(--back_color2);
 }
 
-/* justify-content: center; */
-/* max-width: 1000px; */
 main {
     position: relative;
     padding: 0.1rem;
     background-color: var(--accent_color2);
-    /* background-color: aquamarine; */
-    /* height: auto; */
+   
 }
 
 footer {
     padding: 1rem;
     color: white;
     background-color: var(--back_color1);
-    /* border-top: 1px solid var(--back_color1); */
-    /* border-bottom: 10px solid red; */
     text-align: center;
 }
 
@@ -66,14 +61,13 @@ figcaption {
     width: auto;
 }
 
-/* NOTE: 50% width causes <p> and <span> to break onto different lines */
 .data p, .weather p {
     display: inline-block;
     width: 45%;
     margin: 0.1rem;
     text-align: right;
     font-weight: bold;
-    /* background-color: red;  TODO: DEBUG */
+    
 }
 
 .data span, .weather span {
@@ -81,7 +75,7 @@ figcaption {
     width: 45%;
     margin: 0.1rem;
     text-align: left;
-    /* background-color: greenyellow;  TODO: DEBUG */
+    
 }
 
 /* https://www.iconfinder.com/icons/1530374/weather_day_sand_sandstorm_sun_icon */
