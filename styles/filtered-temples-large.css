@@ -1,0 +1,35 @@
+/* Larger Views ******************************/
+@media screen and (min-width: 780px) {
+    header {
+		display: flex;
+		/* flex-direction: defined in #layout ID; */
+		align-items: flex-end;
+	    justify-content: space-between;
+	}
+	
+	#layout {
+		/* display: flex defined in header tag */
+		flex-direction: row;
+	}
+
+     /* hide hamburger button */
+	#menu {
+		display: none;
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: row;
+	}
+	
+     /* change state in large view */
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+    .navigation a:hover {
+        background-color: yellow;
+        color: #333;
+        font-weight: 700;
+    }
+}
