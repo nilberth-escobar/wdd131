@@ -1,0 +1,140 @@
+:root {
+    --back_color1: #1c2541;
+    --back_color2: #1D5599;
+    --back_color3: #57849C;
+    --accent_color1: #7FC6DE;
+    --accent_color2: #DFDFDF;
+    --accent_color3: #EFEFEF;
+    --wild_red: #FF0000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: var(--back_color1);
+    padding: 1rem;
+    color: white;
+    border: 5px solid var(--back_color1);
+}
+
+
+main {
+    position: relative;
+    padding: 1rem;
+    background-color: var(--accent_color2);
+    min-width: 400px;
+}
+
+footer {
+    padding: 1rem;
+    color: white;
+    background-color: var(--back_color1);
+    text-align: center;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: left;
+   
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+    margin: 10px;
+}
+
+.features label {
+    font-size: 1.1rem;
+}
+
+#feature1, #feature2 {
+    font-weight: 100;
+}
+header, main, footer {
+    min-width: 400px;
+}
+
+textarea {
+    background-color: white;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+}
+
+.pad {
+    padding-bottom: 1rem;
+}
+
+.stars label {
+    float: left;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.features p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.textreview {
+    margin-top: 1rem;
+}
+
+.stars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.thanks {
+    text-align: center;
+}
+
+#submit {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: var(--accent_color3);
+    border-width: 1px;
+    margin: 1rem auto;
+}
+
+#prodName, #installDate, #review, #name, #submit {
+    font-size: 1.2rem;
+    padding: .2rem;
+    width: 100%;
+}
+
+.install {
+    margin-bottom: 1rem;
+}
+
+
+input[type=text] {
+    background-color: white;
+    font-size: 1.2rem;
+}
