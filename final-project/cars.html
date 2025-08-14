@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Fleet & Booking - AutoRent Pro</title>
+    <meta
+      name="description"
+      content="Explore our wide range of luxury, sports, SUV, and economy vehicles. Select your car and book your rental instantly using our secure form."
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">AutoRent Pro</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="cars.html">Rent & Cars</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="fleet" class="vehicle-fleet page-section">
+        <div class="container">
+          <h2>Our Vehicle Fleet</h2>
+          <div id="vehicle-listings" class="fleet-grid">
+            <!-- Vehicle <article> cards will be dynamically inserted here by cars.js -->
+          </div>
+        </div>
+      </section>
+
+      <section id="booking-form" class="booking">
+        <div class="container">
+          <h2>Book Your Rental</h2>
+          <form id="rental-form" class="rental-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="pickup-location">Pick-up Location</label>
+                <input
+                  type="text"
+                  id="pickup-location"
+                  name="pickupLocation"
+                  required
+                  placeholder="Enter city or airport"
+                />
+              </div>
+              <div class="form-group">
+                <label for="return-location">Return Location</label>
+                <input
+                  type="text"
+                  id="return-location"
+                  name="returnLocation"
+                  required
+                  placeholder="Enter city or airport"
+                />
+              </div>
+              <div class="form-group">
+                <label for="pickup-date">Pick-up Date</label>
+                <input
+                  type="date"
+                  id="pickup-date"
+                  name="pickupDate"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="return-date">Return Date</label>
+                <input
+                  type="date"
+                  id="return-date"
+                  name="returnDate"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="fullName"
+                  required
+                  placeholder="John Doe"
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="your@email.com"
+                  autocomplete="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="(123) 456-7890"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="form-group">
+                <label for="driver-age">Driver Age</label>
+                <select id="driver-age" name="driverAge" required>
+                  <option value="">Select Age Range</option>
+                  <option value="18-24">18-24</option>
+                  <option value="25-65">25-65</option>
+                  <option value="65+">65+</option>
+                </select>
+              </div>
+              <div class="form-group form-group-full">
+                <label for="selected-vehicle">Selected Vehicle</label>
+                <input
+                  type="text"
+                  id="selected-vehicle"
+                  name="selectedVehicle"
+                  readonly
+                  required
+                  placeholder="Choose a car from the fleet above"
+                />
+              </div>
+            </div>
+            <div class="form-footer">
+              <div class="form-group-checkbox">
+                <input type="checkbox" id="insurance" name="insurance" />
+                <label for="insurance"
+                  >Add comprehensive insurance ($25/day)</label
+                >
+              </div>
+              <div class="form-group-checkbox">
+                <input type="checkbox" id="terms" name="terms" required />
+                <label for="terms">I agree to the Terms and Conditions</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Book Now</button>
+            </div>
+          </form>
+          <p
+            id="form-message"
+            class="form-status-message"
+            aria-live="polite"
+          ></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>AutoRent Pro</h3>
+            <p>Your trusted partner for premium car rental services.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <address>
+              225 Autoille Road, New York 10001<br />
+              Phone: <a href="tel:123-456-7890">(123) 456-7890</a><br />
+              Email:
+              <a href="mailto:contact@autorentpro.com"
+                >contact@autorentpro.com</a
+              >
+            </address>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="cars.html">Cars</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Working Hours</h4>
+            <p>
+              Mon - Fri: 8:00 AM - 8:00 PM<br />
+              Sat - Sun: 9:00 AM - 6:00 PM
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 AutoRent Pro. All Rights Reserved. |
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/cars.js"></script>
+  </body>
+</html>
